@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.lms-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 2em;
+    background-color: var(--light);
+    position: fixed;
+    z-index: 199;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lms-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lms-logo img {
+    width: 70px;
+    width: 80px;
+}
+
+.lms-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.lms-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.lms-links a:hover {
+    color: #2b7abf;
+}
+
+.active a {
+    color: #2b7abf !important;
+}
+
+.lms-auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.lms-auth a {
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 2px solid #2b7abf;
+    color: black;
+    border-radius: 20px;
+}
+
+.lms-auth a:hover {
+    background-color: #2b7abf;
+    color: white;
+}
+
+.lms-toggle-btn {
+    display: none;
+}
+
+.lms-toggle-btn button {
+    border: none;
+    outline: none;
+    display: flex;
+}
+
+.offcanvas-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.offcanvas-links a {
+    color: black;
+}
+
+.auth-button a {
+    padding: 5px 15px;
+    border: 2px solid #2b7abf;
+    color: black;
+    border-radius: 20px;
+}
+
+@media (max-width:750px) {
+    .lms-links {
+        display: none;
+    }
+
+    .lms-auth {
+        display: none;
+    }
+
+    .bx-menu {
+        display: block;
+    }
+
+    .lms-toggle-btn {
+        display: block;
+    }
+
+    .lms-toggle-btn button {
+        background-color: transparent;
+        font-size: 25px;
+    }
+}
+
+/* Home part */
+
+.lms-home {
+    margin-top: 67px;
+    padding: 2em;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.lms-home-1 {
+    background-color: white;
+    display: flex;
+    padding: 1em;
+    border-radius: 20px;
+
+}
+
+.get-started {
+    padding: 5px 15px;
+    color: black;
+    border: 2px solid #2b7abf;
+    border-radius: 20px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.get-started:hover {
+    background-color: #2b7abf;
+    color: white;
+}
+
+.home-title {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-image {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-image img {
+    width: auto;
+}

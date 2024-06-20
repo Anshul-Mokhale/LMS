@@ -1,0 +1,64 @@
+.card{
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--light);
+}
+
+label {
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+    color: var(--dark);
+  }
+  .ff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+
+
+  
+  input[type="text"],
+  textarea,
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    background-color: var(--grey);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: var(--dark);
+  }
+  
+
+  input[type="text"]::placeholder,
+  textarea::placeholder,
+  input[type="date"]::placeholder {
+    color: var(--dark) !important; /* Change placeholder text color */
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+      /* filter: invert(1);  */
+      background-color: var(--light-blue);
+      color: var(--dark);
+    }
+  textarea {
+    resize: vertical;
+  }
+  .sbm{
+    margin-top: 1em;
+  }
+
+  .sbm button{
+    width: 90px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: var(--blue);
+    color: white;
+  }
+  

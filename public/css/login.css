@@ -1,0 +1,149 @@
+:root {
+    --poppins: "Poppins", sans-serif;
+    --lato: "Lato", sans-serif;
+
+    --light: #f9f9f9;
+    --blue: #3c91e6;
+    --light-blue: #cfe8ff;
+    --grey: #eee;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db504a;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #fd7238;
+    --light-orange: #ffe0d3;
+}
+body.dark{
+    --light: #0c0c1e;
+    --grey: #060714;
+    --dark: #f9f9f9;
+}
+/* div.dark {
+    --grey: #060714;
+    --light: #0c0c1e;
+    background: var(--grey);
+} */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    background-color:   var(--grey);
+}
+
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border: 1px solid #3c91e6;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color:  var(--grey);
+    color: var(--dark);
+    text-align: center;
+}
+
+.box h2 {
+    margin: 0px 0 -0.125rem;
+    padding: 0;
+    color: #3c91e6;
+    text-align: center;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.box p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+.box .inputBox input {
+    width: 93%;
+    padding: 0.625rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+}
+
+.box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: var(var(--dark));
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label,
+.box .inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: var(var(--dark));
+    font-size: 0.75rem;
+    background-color:  var(--grey);
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+input[type="email"], input[type="password"] {
+    color: var(var(--dark));
+}
+.box .inputBox input:focus {
+    outline: none;
+    /* border: 2px solid #1a73e8; */
+}
+.box input[type="submit"] {
+    border: none;
+    outline: none;
+    color: var(var(--dark));
+    background-color: #3c91e6;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    margin-top: 10px; /* Optional: Adjust the margin from the top */
+}
+
+.box input[type="submit"]:hover {
+    background-color: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66, 133, 244, 0.45),
+        0 1px 3px 1px rgba(66, 133, 244, 0.3);
+}
+
+
+.password-toggle {
+    position: relative;
+}
+
+.password-toggle input[type="password"] {
+    padding-right: 30px; /* Ensure space for the eye icon */
+}
+
+.password-toggle .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
