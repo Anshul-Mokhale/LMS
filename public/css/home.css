@@ -194,6 +194,7 @@
 }
 
 .lms-home-2 h1 {
+    padding-top: 1em;
     text-align: center;
 }
 
@@ -343,5 +344,83 @@
 
     .feature-box-1-right img {
         width: 150px;
+    }
+}
+
+
+/* home part 3 */
+
+.method-box-1 img,
+.method-box-2 img,
+.method-box-3 img {
+    width: 350px;
+}
+
+
+
+.method-box-1,
+.method-box-2,
+.method-box-3 {
+    border: 2px solid rgb(151, 151, 151);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    /* width: 450px; */
+    opacity: 0;
+    transform: scale(0);
+    /* Start with opacity 0 */
+    transition: opacity 0.2s;
+}
+
+.in-view {
+    opacity: 1;
+    transform: scale(1);
+    /* Change to opacity 1 when in view */
+}
+
+.method-box {
+    /* margin: 2em 0px; */
+    padding: 1em;
+    background-image: url('../img/Line.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+@media (max-width:750px) {
+
+    .method-box-1,
+    .method-box-2,
+    .method-box-3 {
+        flex-direction: column;
+        padding: 1em;
+    }
+}
+
+@media (max-width:550px) {
+
+    .method-box-1 img,
+    .method-box-2 img,
+    .method-box-3 img {
+        width: 300px;
+    }
+}
+
+@media (max-width:420px) {
+
+    .method-box-1 img,
+    .method-box-2 img,
+    .method-box-3 img {
+        width: 220px;
     }
 }

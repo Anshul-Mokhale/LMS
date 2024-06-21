@@ -50,20 +50,50 @@
         <div class="method-box">
             <div class="method-box-1">
                 <img src={{ asset('img/Signup.svg') }} alt="Signup">
-                <h3>Institute Registration</h3>
+                <div>
+                    <h2>Institute Registration</h2>
+                    <p>Register Your institue to get access of this LMS.</p>
+                </div>
             </div>
             <div class="method-box-2">
                 <img src={{ asset('img/plan.svg') }} alt="Pricing">
-                <h3>Select Plan</h3>
+                <div>
+                    <h2>Select Plan</h2>
+                    <p>Select over various plan at a good deal.</p>
+                </div>
             </div>
             <div class="method-box-2">
                 <img src={{ asset('img/create_grp.svg') }} alt="class">
-                <h3>Create Course</h3>
+                <div>
+                    <h2>Create Course</h2>
+                    <p>Create course, assign teacher and students.</p>
+                </div>
             </div>
         </div>
     </div>
 
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const boxes = document.querySelectorAll('.method-box-1, .method-box-2, .method-box-3');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                } else {
+                    entry.target.classList.remove('in-view'); // Remove class if out of view
+                }
+            });
+        }, {
+            threshold: 0.5 // Adjust this threshold as needed
+        });
+
+        boxes.forEach(box => {
+            observer.observe(box);
+        });
+    });
+</script>
+
 
 
 
