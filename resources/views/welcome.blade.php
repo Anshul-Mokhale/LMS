@@ -71,9 +71,125 @@
             </div>
         </div>
     </div>
+    <div class="lms-home-2">
+        <h1>Pricing</h1>
+        <div class="lms-home-pricing">
+            <div class="pricing-basic">
+                <h4>Basic</h4>
+                <ul>
+                    <li>Up to 5 Courses</li>
+                    <li>Up to 50 Students</li>
+                    <li>Up to 5 Teachers</li>
+                    <li>Basic Support</li>
+                    <li>Access to Study Materials</li>
+                </ul>
+            </div>
+            <div class="pricing-standard">
+                <h4>Standard</h4>
+                <ul>
+                    <li>Up to 10 Courses</li>
+                    <li>Up to 100 Students</li>
+                    <li>Up to 10 Teachers</li>
+                    <li>Priority Support</li>
+                    <li>Access to Study Materials and Live Sessions</li>
+                </ul>
+            </div>
+            <div class="pricing-advance">
+                <h4>Premium</h4>
+                <ul>
+                    <li>Unlimited Courses</li>
+                    <li>Unlimited Students</li>
+                    <li>Unlimited Teachers</li>
+                    <li>24/7 Premium Support</li>
+                    <li>All Features Included</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lms-home-2">
+        <h1>What Customers Say</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <p>"This platform has transformed the way we manage and deliver our courses. It's user-friendly
+                            and efficient."</p>
+                        <h4>- John Doe, ABC Institute</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <p>"The live chat and coding platform features are fantastic. Our students are more engaged than
+                            ever."</p>
+                        <h4>- Jane Smith, XYZ Academy</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <p>"We've been able to scale our operations seamlessly thanks to this LMS. Highly recommend!"
+                        </p>
+                        <h4>- Mark Johnson, EduTech</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <p>"The support team is amazing. They helped us get up and running in no time."</p>
+                        <h4>- Emily White, Learning Hub</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <p>"Our teachers find it very easy to create and manage courses. The feedback from students has
+                            been overwhelmingly positive."</p>
+                        <h4>- Michael Brown, Future Learn</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <p>"The analytics tools provide great insights into student progress and course effectiveness."
+                        </p>
+                        <h4>- Sarah Wilson, Bright Academy</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <p>"This LMS is a game-changer. It has all the features we need and more."</p>
+                        <h4>- David Lee, Smart Education</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <p>"I love the study materials section. It's very comprehensive and easy to use."</p>
+                        <h4>- Laura Kim, EduPath</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <p>"The platform is reliable and constantly updated with new features. Great investment for our
+                            institute."</p>
+                        <h4>- James Williams, Learning Tree</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+    });
     document.addEventListener('DOMContentLoaded', () => {
         const boxes = document.querySelectorAll('.method-box-1, .method-box-2, .method-box-3');
         const observer = new IntersectionObserver((entries) => {

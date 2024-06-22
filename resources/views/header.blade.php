@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="{{ asset('css/loader.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
+    {{-- swiper js --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>{{ $head }}</title>
 </head>
 

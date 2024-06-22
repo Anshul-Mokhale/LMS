@@ -25,11 +25,6 @@
         @else
             <li><a href="/help">Help</a></li>
         @endif
-        @if ($head == 'pricing')
-            <li class="active"><a href="/pricing">Pricing</a></li>
-        @else
-            <li><a href="/pricing">Pricing</a></li>
-        @endif
     </div>
     <div class="lms-auth">
         <li><a href="/sign-in">Login</a></li>
@@ -72,11 +67,6 @@
                 <li class="active"><a href="/help">Help</a></li>
             @else
                 <li><a href="/help">Help</a></li>
-            @endif
-            @if ($head == 'pricing')
-                <li class="active"><a href="/pricing">Pricing</a></li>
-            @else
-                <li><a href="/pricing">Pricing</a></li>
             @endif
             <li class="auth-button"><a href="/sign-in">Login</a></li>
             <li class="auth-button"><a href="/sign-up">Signup</a></li>

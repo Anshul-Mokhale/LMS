@@ -375,7 +375,7 @@
     opacity: 0;
     transform: scale(0);
     /* Start with opacity 0 */
-    transition: opacity 0.2s;
+    transition: opacity 0.8s;
 }
 
 .in-view {
@@ -422,5 +422,177 @@
     .method-box-2 img,
     .method-box-3 img {
         width: 220px;
+    }
+}
+
+
+/* pricing section */
+.lms-home-pricing {
+    display: flex;
+    align-items: stretch;
+    /* Ensures equal height */
+    justify-content: center;
+    gap: 2em;
+    /* flex-wrap: wrap; */
+    padding: 1em;
+}
+
+.pricing-basic,
+.pricing-standard,
+.pricing-advance {
+    border: 2px solid #ddd;
+    padding: 20px;
+    flex: 1 1 300px;
+    /* Ensures equal width */
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    /* For vertical alignment */
+    justify-content: space-between;
+    /* Distribute space evenly */
+}
+
+.pricing-basic:hover,
+.pricing-standard:hover,
+.pricing-advance:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+    /* Takes up the remaining space */
+}
+
+li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width:780px) {
+    .lms-home-pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .pricing-basic,
+    .pricing-standard,
+    .pricing-advance {
+        width: 300px;
+    }
+}
+
+@media (max-width:420px) {
+
+    .pricing-basic,
+    .pricing-standard,
+    .pricing-advance {
+        width: 220px;
+    }
+}
+
+/* what customer says */
+
+.swiper {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+}
+
+.testimonial-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-content h4 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.swiper-pagination-bullet {
+    background: #007bff;
+}
+
+
+/* Footer section */
+
+footer {
+
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 10px;
+    background: white;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.footer-class {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer-part-1 {
+    max-width: 500px;
+}
+
+.footer-part-1 img {
+    width: 80px;
+}
+
+.footer-part-upper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.footer-bottom-class {
+    border-top: 2px solid rgb(141, 141, 141);
+    padding-top: 1em;
+    text-align: center;
+}
+
+@media (max-width:910px) {
+    .footer-class {
+        flex-direction: column;
+    }
+
+    .footer-part-1 {
+        max-width: 100%;
+        width: 100%;
     }
 }
